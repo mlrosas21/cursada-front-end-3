@@ -1,0 +1,17 @@
+.title{
+    text-align:center;
+    background-color:#487a93;
+    height: 3rem;
+    padding: 2%;
+  }
+
+.postCard{
+    border : solid 2px red;
+    border-radius: 10%;
+    margin-bottom: 3px;
+    padding: 20px;
+  }
+
+.postImg{
+    max-width: 80vw;
+   }

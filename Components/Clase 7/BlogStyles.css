@@ -1,0 +1,38 @@
+.title{
+    text-align:center;
+    background-color:#487a93;
+    height: 3rem;
+    padding: 2%;
+  }
+  h1{
+    color:white;
+  }
+  .post-card{
+    border : solid 2px red;
+    border-radius: 10%;
+    margin-bottom: 3px;
+    padding: 20px;
+  }
+  .post-title{
+    
+  }
+  
+  .post-body{
+    
+  }
+  
+  .post-writer{
+    
+  }
+  
+  .post-img{
+   max-width: 80vw;
+  }
+  
+  .like-button{
+    
+  }
+  
+  .unlike-button{
+    
+  }
