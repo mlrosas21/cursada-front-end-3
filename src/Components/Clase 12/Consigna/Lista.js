@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cards = () => {
+const Lista = () => {
   return (
     <div>
         {/* Acá va la lista mapeada */}
@@ -8,4 +8,4 @@ const Cards = () => {
   )
 }
 
-export default Cards
+export default Lista
