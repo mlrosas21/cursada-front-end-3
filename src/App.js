@@ -1,20 +1,20 @@
-import './App.css';
-import { useState } from 'react';
-import ClassDidMount from './Components/Clase 14/ClassDidMount';
-import FuncUseEffect from './Components/Clase 14/FuncUseEffect';
-import UseEffect from './Components/Clase 14/UseEffect';
-
-
+import { Routes, Route, Link } from 'react-router-dom'
+import About from './Components/Clase 16/About';
+import Contact from './Components/Clase 16/Contact';
+import Header from './Components/Clase 16/Header';
+import Home from './Components/Clase 16/Home';
 
 function App() {
 
-  const [show, setShow] = useState(false)
-
    return (
     <div className="App">
-      {/* {show ? <ClassDidMount/> : <FuncUseEffect/>}
-      <button onClick={() => setShow(!show)} >Cambiar componente</button> */}
-      <UseEffect/>
+      <Header/>
+      <Routes>
+        <Route path='/' element={<Home/>}>
+          <Route path='about' element={<About/>}/>
+          <Route path='contacto' element={<Contact/>}/>
+        </Route>
+      </Routes>
     </div>
   );
 }
