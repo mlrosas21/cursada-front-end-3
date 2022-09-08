@@ -3,17 +3,17 @@ import Home from './Components/Clase 17/Home';
 import PokeList from './Components/Clase 17/PokeList';
 import Pokemon from './Components/Clase 17/Pokemon';
 import PokeTypes from './Components/Clase 17/PokeTypes';
-
+import { routes } from './configRoute'
 function App() {
 
    return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Home/>}>
-          <Route path='/pokemon' element={<PokeList/>}>
+        <Route path={routes.home} element={<Home/>}>
+          <Route path={routes.pokeList} element={<PokeList/>}>
             <Route path=':pokeName' element={<Pokemon/>}/>
           </Route>
-          <Route path='/types' element={<PokeTypes/>}/>
+          <Route path={routes.pokeTypes} element={<PokeTypes/>}/>
         </Route>
       </Routes>
     </div>
