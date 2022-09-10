@@ -14,7 +14,7 @@ const Pokemon = () => {
     }, [url])
 
   return (
-    <div>
+    <div className='poke-info'>
         <h2>{params.pokeName}</h2>
         <h2>{poke.name}</h2>
         <img src={poke.sprites?.front_default} alt=''/>

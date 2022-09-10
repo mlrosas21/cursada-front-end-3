@@ -1,9 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './Components/Clase 17/Home';
-import PokeList from './Components/Clase 17/PokeList';
-import Pokemon from './Components/Clase 17/Pokemon';
-import PokeTypes from './Components/Clase 17/PokeTypes';
+import Home from './Components/Clase 17 y 18/Home';
+import PokeList from './Components/Clase 17 y 18/PokeList';
+import Pokemon from './Components/Clase 17 y 18/Pokemon';
+import PokeTypes from './Components/Clase 17 y 18/PokeTypes';
 import { routes } from './configRoute'
+
 function App() {
 
    return (
