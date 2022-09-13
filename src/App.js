@@ -3,6 +3,7 @@ import Home from './Components/Clase 17 y 18/Home';
 import PokeList from './Components/Clase 17 y 18/PokeList';
 import Pokemon from './Components/Clase 17 y 18/Pokemon';
 import PokeTypes from './Components/Clase 17 y 18/PokeTypes';
+import Type from './Components/Clase 17 y 18/Type';
 import { routes } from './configRoute'
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
           <Route path={routes.pokeList} element={<PokeList/>}>
             <Route path=':pokeName' element={<Pokemon/>}/>
           </Route>
-          <Route path={routes.pokeTypes} element={<PokeTypes/>}/>
+          <Route path={routes.pokeTypes} element={<PokeTypes/>}>
+            <Route path=':type' element={<Type/>}/>
+          </Route>
         </Route>
       </Routes>
     </div>
